@@ -13,7 +13,7 @@ function App() {
 
   const start = async () => {
     try {
-      const ws = new WebSocket("ws://connectsphere-backend-production.up.railway.app/stream");
+      const ws = new WebSocket("wss://connectsphere-backend-production.up.railway.app");
       wsRef.current = ws;
 
       ws.onmessage = (event) => {
